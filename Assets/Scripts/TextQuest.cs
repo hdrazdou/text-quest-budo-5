@@ -1,14 +1,18 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class TextQuest : MonoBehaviour
 {
     #region Variables
 
-    public TMP_Text AnswersLabel;
+    public TMP_Text LevelNameLabel;
     public TMP_Text DescriptionLabel;
+    public TMP_Text AnswersLabel;
+    public UnityEngine.UI.Image LevelImage; //такой тип нужен, чтоб поле появилось в TextQuest объекте
 
     public Level StartLevel;
+
     private Level _currentLevel;
     private readonly KeyCode[] _inputKeys =
     {
@@ -31,7 +35,7 @@ public class TextQuest : MonoBehaviour
     {
         for (int i = 0; i < _inputKeys.Length; i++)
         {
-            if (Input.GetKeyDown(_inputKeys[i])&&IsNextLevelCreated(i))
+            if (Input.GetKeyDown(_inputKeys[i]) && IsNextLevelCreated(i))
             {
                 _currentLevel = GetNextLevel(i);
                 UpdateUi();
@@ -57,6 +61,8 @@ public class TextQuest : MonoBehaviour
     {
         DescriptionLabel.text = _currentLevel.Description;
         AnswersLabel.text = _currentLevel.Answers;
+        LevelNameLabel.text = _currentLevel.LevelName;
+        LevelImage.sprite = _currentLevel.Image; // превращаем LevelImage в спрайт, чтоб в него засетать Image (который тоже спрайт)
     }
 
     #endregion
