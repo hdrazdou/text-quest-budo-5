@@ -975,7 +975,7 @@ MonoBehaviour:
   NextLevels:
   - {fileID: 1308925396}
   - {fileID: 1308925396}
-  - {fileID: 411895137}
+  - {fileID: 1396679703}
   Image: {fileID: 21300000, guid: 4cc461f305e514264b7d2ae18d715915, type: 3}
 --- !u!1 &1413305642
 GameObject:
@@ -1062,8 +1062,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 29
+  m_fontSizeBase: 29
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

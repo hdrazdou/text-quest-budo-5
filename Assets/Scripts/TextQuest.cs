@@ -1,6 +1,6 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class TextQuest : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class TextQuest : MonoBehaviour
     public TMP_Text LevelNameLabel;
     public TMP_Text DescriptionLabel;
     public TMP_Text AnswersLabel;
-    public UnityEngine.UI.Image LevelImage; //такой тип нужен, чтоб поле появилось в TextQuest объекте
+    public Image LevelImage; // UnityEngine.UI.Image тип нужен, чтоб поле появилось в TextQuest объекте
 
     public Level StartLevel;
 
