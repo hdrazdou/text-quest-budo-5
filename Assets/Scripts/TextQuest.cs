@@ -9,7 +9,7 @@ public class TextQuest : MonoBehaviour
     public TMP_Text LevelNameLabel;
     public TMP_Text DescriptionLabel;
     public TMP_Text AnswersLabel;
-    public Image LevelImage; // UnityEngine.UI.Image тип нужен, чтоб поле появилось в TextQuest объекте
+    public Image LevelImage; // UnityEngine.UI.Image тип нужен, чтоб поле появилось в TextQuest объекте в юнити
 
     public Level StartLevel;
 
@@ -62,7 +62,8 @@ public class TextQuest : MonoBehaviour
         DescriptionLabel.text = _currentLevel.Description;
         AnswersLabel.text = _currentLevel.Answers;
         LevelNameLabel.text = _currentLevel.LevelName;
-        LevelImage.sprite = _currentLevel.Image; // превращаем LevelImage в спрайт, чтоб в него засетать Image (который тоже спрайт)
+        LevelImage.sprite = _currentLevel.Image; // превращаем LevelImage в спрайт, чтоб в него засетать Image из
+                                                 // Level класса (который тоже спрайт)
     }
 
     #endregion
