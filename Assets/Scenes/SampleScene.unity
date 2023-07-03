@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 411895138}
   - component: {fileID: 411895137}
   m_Layer: 0
-  m_Name: ThirdLevel
+  m_Name: SecondLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,7 +485,7 @@ MonoBehaviour:
   NextLevels:
   - {fileID: 1308925396}
   - {fileID: 1308925396}
-  - {fileID: 1275486776}
+  - {fileID: 1396679703}
   Image: {fileID: 21300000, guid: 4cc461f305e514264b7d2ae18d715915, type: 3}
 --- !u!4 &411895138
 Transform:
@@ -533,8 +533,8 @@ Transform:
   - {fileID: 2146112773}
   - {fileID: 591017634}
   - {fileID: 1114578785}
-  - {fileID: 1396679702}
   - {fileID: 411895138}
+  - {fileID: 1396679702}
   - {fileID: 1275486777}
   - {fileID: 1308925397}
   - {fileID: 1404409478}
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   LevelName: "\u0412\u0445\u043E\u0434"
   NextLevels:
   - {fileID: 1308925396}
-  - {fileID: 1396679703}
+  - {fileID: 411895137}
   - {fileID: 1404409479}
   Image: {fileID: 21300000, guid: 4cc461f305e514264b7d2ae18d715915, type: 3}
 --- !u!1 &1275486775
@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d79c29068e94265b614a59fe220936c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Answers: "1. I am \u043A\u0440\u0443\u0442\u043E\u0439 \u0438 \u043F\u044C\u044E
+  Answers: "1. \u042F \u043A\u0440\u0443\u0442\u043E\u0439 \u0438 \u043F\u044C\u044E
     \u0442\u043E\u043B\u044C\u043A\u043E \u0432\u043E\u0434\u043A\u0443 \u2013 \u043C\u044F\u0442\u043D\u0443\u044E
     \u0438 \u0447\u0435\u0440\u0435\u0437 \u0442\u0440\u0443\u0431\u043E\u0447\u043A\u0443!\n2.
     \u0414\u0430, \u043A\u043E\u043D\u0435\u0447\u043D\u043E, \u0431\u043B\u0430\u0433\u043E\u0434\u0440\u0430\u0441\u0442\u0432\u0443\u044E!\n3.
@@ -1192,7 +1192,7 @@ GameObject:
   - component: {fileID: 1396679702}
   - component: {fileID: 1396679703}
   m_Layer: 0
-  m_Name: SecondLevel
+  m_Name: ThirdLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1233,7 +1233,7 @@ MonoBehaviour:
   NextLevels:
   - {fileID: 1308925396}
   - {fileID: 1308925396}
-  - {fileID: 411895137}
+  - {fileID: 1275486776}
   Image: {fileID: 21300000, guid: 4cc461f305e514264b7d2ae18d715915, type: 3}
 --- !u!1 &1404409477
 GameObject:
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   NextLevels:
   - {fileID: 1308925396}
   - {fileID: 1308925396}
-  - {fileID: 1396679703}
+  - {fileID: 411895137}
   Image: {fileID: 21300000, guid: 4cc461f305e514264b7d2ae18d715915, type: 3}
 --- !u!1 &1413305642
 GameObject:
@@ -1360,8 +1360,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Answers
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1385,8 +1385,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29
-  m_fontSizeBase: 29
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
