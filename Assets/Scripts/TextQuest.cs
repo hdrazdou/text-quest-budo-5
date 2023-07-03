@@ -6,10 +6,12 @@ public class TextQuest : MonoBehaviour
 {
     #region Variables
 
-    public TMP_Text LevelNameLabel;
-    public TMP_Text DescriptionLabel;
     public TMP_Text AnswersLabel;
+    public Button Button;
+    public TMP_Text DescriptionLabel;
     public Image LevelImage; // UnityEngine.UI.Image тип нужен, чтоб поле появилось в TextQuest объекте в юнити
+
+    public TMP_Text LevelNameLabel;
 
     public Level StartLevel;
 
@@ -29,10 +31,12 @@ public class TextQuest : MonoBehaviour
     {
         _currentLevel = StartLevel;
         UpdateUi();
+        Button.onClick.AddListener(() => StartButtonClicked());
     }
 
     private void Update()
     {
+        UpdateUi();
         for (int i = 0; i < _inputKeys.Length; i++)
         {
             if (Input.GetKeyDown(_inputKeys[i]) && IsNextLevelCreated(i))
@@ -57,13 +61,19 @@ public class TextQuest : MonoBehaviour
         return _currentLevel.NextLevels.Length > index;
     }
 
+    private Level StartButtonClicked()
+    {
+        Button.gameObject.SetActive(false);
+        return _currentLevel = GetNextLevel(0);
+    }
+
     private void UpdateUi()
     {
         DescriptionLabel.text = _currentLevel.Description;
         AnswersLabel.text = _currentLevel.Answers;
         LevelNameLabel.text = _currentLevel.LevelName;
         LevelImage.sprite = _currentLevel.Image; // превращаем LevelImage в спрайт, чтоб в него засетать Image из
-                                                 // Level класса (который тоже спрайт)
+        // Level класса (который тоже спрайт)
     }
 
     #endregion

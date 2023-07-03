@@ -14,6 +14,6 @@ public class Level : MonoBehaviour
     public Level[] NextLevels;
 
     public Sprite Image;
-
+    
     #endregion
 }
