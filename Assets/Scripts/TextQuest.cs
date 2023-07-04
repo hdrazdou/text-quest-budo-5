@@ -1,6 +1,10 @@
+#region
+
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
+#endregion
 
 public class TextQuest : MonoBehaviour
 {
@@ -16,13 +20,13 @@ public class TextQuest : MonoBehaviour
     public Level StartLevel;
 
     private Level _currentLevel;
-    private bool _isStarted;
     private readonly KeyCode[] _inputKeys =
     {
         KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3,
         KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6,
         KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9,
     };
+    private bool _isStarted;
 
     #endregion
 
@@ -41,6 +45,7 @@ public class TextQuest : MonoBehaviour
         {
             return;
         }
+
         for (int i = 0; i < _inputKeys.Length; i++)
         {
             if (Input.GetKeyDown(_inputKeys[i]) && IsNextLevelCreated(i))
