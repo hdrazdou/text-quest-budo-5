@@ -16,6 +16,7 @@ public class TextQuest : MonoBehaviour
     public Level StartLevel;
 
     private Level _currentLevel;
+    private bool _isStarted;
     private readonly KeyCode[] _inputKeys =
     {
         KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3,
@@ -31,12 +32,15 @@ public class TextQuest : MonoBehaviour
     {
         _currentLevel = StartLevel;
         UpdateUi();
-        Button.onClick.AddListener(() => StartButtonClicked());
+        Button.onClick.AddListener(StartButtonClicked);
     }
 
     private void Update()
     {
-        UpdateUi();
+        if (!_isStarted)
+        {
+            return;
+        }
         for (int i = 0; i < _inputKeys.Length; i++)
         {
             if (Input.GetKeyDown(_inputKeys[i]) && IsNextLevelCreated(i))
@@ -61,10 +65,12 @@ public class TextQuest : MonoBehaviour
         return _currentLevel.NextLevels.Length > index;
     }
 
-    private Level StartButtonClicked()
+    private void StartButtonClicked()
     {
         Button.gameObject.SetActive(false);
-        return _currentLevel = GetNextLevel(0);
+        _currentLevel = GetNextLevel(0);
+        _isStarted = true;
+        UpdateUi();
     }
 
     private void UpdateUi()

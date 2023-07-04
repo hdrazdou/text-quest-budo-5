@@ -9,11 +9,11 @@ public class Level : MonoBehaviour
     [TextArea]
     public string Description;
 
+    public Sprite Image;
+
     public string LevelName;
 
     public Level[] NextLevels;
 
-    public Sprite Image;
-    
     #endregion
 }

@@ -243,6 +243,7 @@
 
     &lt;/TypePattern&gt;
 &lt;/Patterns&gt;</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=RedundantDeclarationSemicolon/@EntryIndexedValue">WARNING</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=SuggestVarOrType_005FBuiltInTypes/@EntryIndexedValue">ERROR</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=SuggestVarOrType_005FElsewhere/@EntryIndexedValue">ERROR</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=SuggestVarOrType_005FSimpleTypes/@EntryIndexedValue">ERROR</s:String>
@@ -261,8 +262,8 @@
     &amp;lt;Reformat&amp;gt;false&amp;lt;/Reformat&amp;gt;
   &amp;lt;/Language&amp;gt;
   &amp;lt;Language id="HTML"&amp;gt;
-    &amp;lt;Rearrange&amp;gt;false&amp;lt;/Rearrange&amp;gt;
     &amp;lt;OptimizeImports&amp;gt;false&amp;lt;/OptimizeImports&amp;gt;
+    &amp;lt;Rearrange&amp;gt;false&amp;lt;/Rearrange&amp;gt;
     &amp;lt;Reformat&amp;gt;false&amp;lt;/Reformat&amp;gt;
   &amp;lt;/Language&amp;gt;
   &amp;lt;Language id="HTTP Request"&amp;gt;
@@ -290,8 +291,8 @@
     &amp;lt;Reformat&amp;gt;false&amp;lt;/Reformat&amp;gt;
   &amp;lt;/Language&amp;gt;
   &amp;lt;Language id="XML"&amp;gt;
-    &amp;lt;Rearrange&amp;gt;false&amp;lt;/Rearrange&amp;gt;
     &amp;lt;OptimizeImports&amp;gt;false&amp;lt;/OptimizeImports&amp;gt;
+    &amp;lt;Rearrange&amp;gt;false&amp;lt;/Rearrange&amp;gt;
     &amp;lt;Reformat&amp;gt;false&amp;lt;/Reformat&amp;gt;
   &amp;lt;/Language&amp;gt;
   &amp;lt;Language id="yaml"&amp;gt;
